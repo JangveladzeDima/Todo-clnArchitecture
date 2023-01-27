@@ -12,7 +12,7 @@ public class TodoTask{
     public List<TodoSubTask>? TodoSubTasks{ get; set; }
     public User User{ get; set; }
 
-    public TodoTask Create(string userId, string name, string description){
+    public static TodoTask Create(string userId, string name, string description){
         return new TodoTask{
             Id = Guid.NewGuid().ToString(),
             UserId = userId,

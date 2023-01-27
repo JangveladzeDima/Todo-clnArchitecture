@@ -8,5 +8,10 @@ public static partial class Errors{
             code: "User.DuplicateEmail",
             description: "Email is already in use"
         );
+
+        public static Error UserNotFound => Error.NotFound(
+            code: "User.UserNotFound",
+            description: "User not found"
+        );
     }
 }

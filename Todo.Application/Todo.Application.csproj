@@ -11,10 +11,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Common\Repository" />
-    </ItemGroup>
-
-    <ItemGroup>
       <PackageReference Include="ErrorOr" Version="1.2.1" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     </ItemGroup>

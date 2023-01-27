@@ -1,4 +1,5 @@
 using ErrorOr;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Todo.Application.Services.Authentication;
 using Todo.Application.Services.Authentication.Commands;
@@ -6,6 +7,7 @@ using Todo.Contracts.Authentication;
 
 namespace Todo.Api.Controllers;
 
+[AllowAnonymous]
 [ApiController]
 [Route("auth")]
 public class AuthController : ApiController{

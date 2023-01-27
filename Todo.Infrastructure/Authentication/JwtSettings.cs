@@ -3,9 +3,9 @@ namespace Todo.Infrastructure.Authentication;
 public class JwtSettings{
     public const string SectionName = "JwtSettings";
 
-    public string Secret{ get; set; } = "asdasdowqdnowqnd";
+    public string Secret{ get; set; } = null!;
 
-    public int ExpiryMinutes{ get; set; }
+    public int ExpiryMinutes{ get; init; }
 
     public string Issuer{ get; set; } = null!;
 

@@ -21,7 +21,6 @@ public class UserConfiguration : IEntityTypeConfiguration<User>{
         builder.Property(u => u.UpdateAt).HasColumnType("datetime");
 
         builder.HasMany<TodoTask>(u => u.TodoTasks)
-            .WithOne(t => t.User)
-            .HasForeignKey(t => t.UserId);
+            .WithOne(t => t.User);
     }
 }
